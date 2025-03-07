@@ -1,0 +1,37 @@
+POST http://localhost:3333/subscriptions
+Content-Type: application/json
+
+{
+    "name": "Usuário Indicado3",
+    "email": "indicado3@gmail.com",
+    "referrer": "79efc741-cb1b-4fb0-a63b-289aac4b7d85"
+}
+
+###
+
+GET http://localhost:3333/invites/46e4aa0e-3479-426b-a632-d2567563b60e
+
+###
+
+GET http://localhost:3333/subscribers/46e4aa0e-3479-426b-a632-d2567563b60e/ranking/clicks
+
+###
+
+GET http://localhost:3333/subscribers/46e4aa0e-3479-426b-a632-d2567563b60e/ranking/count
+
+###
+
+GET http://localhost:3333/subscribers/46e4aa0e-3479-426b-a632-d2567563b60e/ranking/position
+
+###
+
+GET http://localhost:3333/ranking
+
+###
+
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+    "message": "Me dê o nome do usuário que está com maior pontuação no ranking"
+}
