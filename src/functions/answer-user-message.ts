@@ -1,5 +1,5 @@
 import { generateText, tool } from 'ai'
-import { openai } from '../ai/openai'
+import { xai } from '../ai/openai'
 import { postgresTool } from '../ai/tools/postgres-tool'
 import { redisTool } from '../ai/tools/redis-tool'
 
@@ -9,7 +9,7 @@ interface AnswerUserMessageParams {
 
 export async function answerUserMessage({ message }: AnswerUserMessageParams) {
   const answer = await generateText({
-    model: openai,
+    model: xai,
     prompt: message,
     tools: {
       postgresTool,

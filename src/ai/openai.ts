@@ -1,3 +1,3 @@
-import { openai as openaiModel } from '@ai-sdk/openai'
+import { xai as xaiModel } from '@ai-sdk/xai'
 
-export const openai = openaiModel('gpt-4o-mini')
+export const xai = xaiModel('grok-2-1212')
